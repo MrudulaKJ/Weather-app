@@ -55,3 +55,9 @@
   color: white;
 }
 
+.weather-card.drizzle-background {
+  background-image: url('https://i.gifer.com/7sd1.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}

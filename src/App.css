@@ -17,6 +17,11 @@ body.rain-background {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  body.drizzle-background {
+    background-image: url('https://i.gifer.com/7sd1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
-  /* Additional styles for other weather conditions */
+
   

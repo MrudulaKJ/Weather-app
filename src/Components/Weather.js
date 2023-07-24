@@ -43,12 +43,12 @@ const Weather = () => {
         setShowInput(false)
     };
     const handleCheckWeather = () => {
-        setShowInput(true); // Show the input box when the user clicks on "Check Your Weather"
+        setShowInput(true); 
     };
     const handleClearCity = () => {
         setCity('');
-        setShowInput(false); // Hide the input box when the "x" icon is clicked
-        setWeatherData(null); // Clear weather data when the "x" icon is clicked
+        setShowInput(false); 
+        setWeatherData(null); 
     };
 
     return (
@@ -57,14 +57,8 @@ const Weather = () => {
                 <img src={rainbowImage} alt="Rainbow" className="rainbow-image" />
                {!showInput && ( <button className="header-text" onClick={handleCheckWeather}>Weather</button>)}
             </div>
-            {/* {!showInput && (
-                <button className="check-weather-button" onClick={handleCheckWeather}>
-                    Check Your Weather
-                </button>
-            )} */}
             {(
                 <form className="form" onSubmit={handleFormSubmit}>
-                    {/* Input box will be displayed once showInput is true */}
                     <div className="input-container">
                         <input
                             type="text"
@@ -75,7 +69,7 @@ const Weather = () => {
                         />
                         {city && (
                             <button type="button" className="clear-button" onClick={handleClearCity}>
-                                &#x2716; {/* "x" icon */}
+                                &#x2716; 
                             </button>
                         )}
                     </div>

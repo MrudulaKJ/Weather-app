@@ -1,6 +1,6 @@
 // WeatherCard.js
 import React from 'react';
-import './WeatherCard.css'; 
+import './WeatherCard.css';
 
 const WeatherCard = ({ weatherData }) => {
   if (!weatherData) {
@@ -20,6 +20,10 @@ const WeatherCard = ({ weatherData }) => {
   } else if (weatherCondition.includes('clear')) {
     backgroundClass = 'clear-background';
   }
+  else if (weatherCondition.includes('drizzle')) {
+    backgroundClass = 'drizzle-background';
+  }
+console.log("condition",weatherCondition)
 
   return (
     <div className={`weather-card ${backgroundClass}`}>
